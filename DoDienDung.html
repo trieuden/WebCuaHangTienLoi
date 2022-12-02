@@ -5,51 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List of products</title>
-    <script src="./assets/js/product.js"></script>
+    <!-- <script src="./assets/js/product.js"></script> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/home.js"></script>
     <script src="./assets/js/login.js"></script>
     <link rel="stylesheet" href="./assets/css/products.css">
-    <link rel="stylesheet" href="./assets/css/cart.css">
+    <!-- <link rel="stylesheet" href="./assets/css/cart.css"> -->
     <link rel="stylesheet" href="./assets/css/event.css">
     <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/Footer.css">
     <link rel="stylesheet" href="./assets/css/Homepage.css">
-
 </head>
 <body>
     <div id="top-header">
         <!-- begin logo -->
         <div class="logo">
-            <img src="./assets/img/top_header/logo.png" alt="" class="logo-brand">
+            <a href="./idex.html"><img src="./assets/img/top_header/logo.png" alt="" class="logo-brand"></a>
         </div>
         <!-- end logo -->
         <!-- begin login -->
         <div class="login-btn">
-          <li>
-            <a href="./login.html">
-              <i class="user-icon ti-user"></i>
-              <h1>Login</h1>
-            </a>
-          </li>
+            <li>
+                <a href="./login.html">
+                  <i class="user-icon ti-user"></i>
+                  <h1>Login</h1>
+                </a>
+            </li>
         </div>
         <!-- end login -->
         <!-- begin cart -->
-
         <div class="cart-btn">
-          <a href="./cart.html"><i class="cart-icon ti-shopping-cart"></i></a>
-          <div class="cart-list">
-              <div class="top-nullcart">
-                  <h1>Giỏ Hàng Rỗng</h1>
-                  <img src="./assets/img/top_header/nullcart.png" alt="">
-              </div>
-              <h1 class="title">Sản Phẩm Mới</h1>
-              <div id="item-header">
-              
-              </div>
-          </div>
-      </div>
+            <a href="./cart.html"><i class="cart-icon ti-shopping-cart"></i></a>
+            <div class="cart-list">
+                <div class="top-nullcart">
+                    <h1>Giỏ Hàng Rỗng</h1>
+                    <img src="./assets/img/top_header/nullcart.png" alt="">
+                </div>
+                <h1 class="title">Sản Phẩm Mới</h1>
+                <div id="item-header">
+                
+                </div>
+            </div>
+        </div>
         <!-- end cart -->
     </div>
     <style>
@@ -197,9 +195,11 @@
     </div>
 </body>
 <script>
-    itemChildren();
     var lg = localStorage.getItem("login");
     var login=JSON.parse(lg);
     loginE();
+    var gh = localStorage.getItem("giohang");
+    var giohang=JSON.parse(gh);
+    itemChildren();
  </script>
 </html>
